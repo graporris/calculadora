@@ -24,7 +24,14 @@ body {
     height: 20%;
     margin-bottom: 1rem;
     border:1px solid #d0d0d0;
-    border-radius: 15px;    
+    border-radius: 15px;  
+    font-size: 40px; 
+    color: black;
+    text-align: right;
+    justify-content: center;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    word-wrap: break-word;
 }
 
 .calc__teclas {
@@ -54,9 +61,13 @@ body {
 }
 
 .calc__borrar {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1,1fr);
     justify-content: end;
     margin-bottom: 1rem;
+    gap: .3rem;
+    align-content: end;
 }
 
 .calc__borrar__boton {
@@ -69,3 +80,4 @@ body {
     padding-right: .5rem;
     justify-content: center;
 }
+
